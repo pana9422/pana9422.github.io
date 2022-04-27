@@ -22,7 +22,7 @@
 
     <link rel="preload" href="assets/brand.png" as="image">
     <link rel="preload" href="css/app.css" as="style">
-    <link rel="preload" href="js/app.js" as="script">
+    <!-- <link rel="preload" href="js/app.js" as="script"> -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -83,7 +83,7 @@
             </div>
         </nav>
         <div class="banner" id="home">
-            <div class="container">
+            <div class="banner__container container">
                 <div class="banner__description">
                     <div class="banner__social">
                         <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -92,8 +92,8 @@
                         <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
                     </div>
                     <div class="banner__title">
-                        <h1 class="banner__heading">Soy, Miguel J Medina</h1>
-                        <h2>Diseñador UI & Web</h2>
+                        <h1 class="banner__heading">Soy Miguel J Medina</h1>
+                        <h2 class="banner__profession">Diseñador <span> UI & Web</span></h2>
                     </div>
                     <div class="banner__action">
                         <a href="#" class="btn btn-primary">
@@ -116,245 +116,254 @@
     </header>
     <main>
         <section class="about-me" id="about-me">
-            <h3 class="about-me__title title">Conoce mas sobre mí</h3>
-            <div class="about-me__card">
-                <picture>
-                    <source class="about-me__image" media="(min-width:1024px)" srcset="assets/about-me-desktop.png">
-                    <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
-                </picture>
-                <div class="about-me__container">
-                    <div class="about-me__description">
-                        <p>Mi formación profesiona es de un Diseñador UI & Web. Tengo habilidades en el diseño y
-                            creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
-                        <a href="#" class="btn btn-primary">
-                            <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                            <span class="btn__text">Contáctame</span>
-                        </a>
-                    </div>
-                    <div class="about-me__skills">
-                        <div class="about-me__skill">
-                            <span class="about-me__icon"><i class="fa-solid fa-briefcase"></i> 6 </span>
-                            <span class="about-me__text">Proyectos</span>
+            <div class="about-me__container container">
+                <h3 class="about-me__title title">Conoce mas sobre mí</h3>
+                <div class="about-me__card">
+                    <picture class="about-me__picture">
+                        <source class="about-me__image" media="(min-width:1024px)" srcset="assets/about-me-desktop.png">
+                        <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
+                    </picture>
+                    <div class="about-me__content">
+                        <div class="about-me__description">
+                            <p>Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y
+                                creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
+                            <a href="#" class="btn btn-primary">
+                                <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                <span class="btn__text">Contáctame</span>
+                            </a>
                         </div>
-                        <div class="about-me__skill">
-                            <span class="about-me__icon"><i class="fa-solid fa-award"></i> 4 </span>
-                            <span class="about-me__text">Especialidades</span>
-                        </div>
-                        <div class="about-me__skill">
-                            <span class="about-me__icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
-                            <span class="about-me__text">Herramientas y tecnologías</span>
-                        </div>
-                        <div class="about-me__skill">
-                            <span class="about-me__icon"><i class="fa-solid fa-heart"></i> 100% </span>
-                            <span class="about-me__text">Pasión y conocimiento</span>
+                        <div class="about-me__skills">
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-briefcase"></i> 6 </span>
+                                <span class="about-me__text">Proyectos</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-award"></i> 4 </span>
+                                <span class="about-me__text">Especialidades</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
+                                <span class="about-me__text">Herramientas y tecnologías</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-heart"></i> 100% </span>
+                                <span class="about-me__text">Pasión y conocimiento</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-me__tecnologies">
-                <img class="about-me__tecnology" src="assets/Figma-min.png" alt="Figma">
-                <img class="about-me__tecnology" src="assets/html5-min.png" alt="HTML5">
-                <img class="about-me__tecnology" src="assets/css3-min.png" alt="CSS3">
-                <img class="about-me__tecnology" src="assets/Bootstrap-min.png" alt="Bootstrap">
-                <img class="about-me__tecnology" src="assets/TailwindCSS-min.png" alt="TailwindCSS">
-                <img class="about-me__tecnology" src="assets/sass-min.png" alt="Sass">
-                <img class="about-me__tecnology" src="assets/svg-min.png" alt="SVG">
-                <img class="about-me__tecnology" src="assets/git-min.png" alt="Git">
-                <img class="about-me__tecnology" src="assets/github-min.png" alt="GitHub">
-                <img class="about-me__tecnology" src="assets/javascript-min.png" alt="JavaScript">
-                <img class="about-me__tecnology" src="assets/react-min.png" alt="React">
-                <img class="about-me__tecnology" src="assets/nodejs-min.png" alt="NodeJS">
-                <img class="about-me__tecnology" src="assets/mongodb-min.png" alt="MongoDB">
-                <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
+                <div class="about-me__tecnologies">
+                    <img class="about-me__tecnology" src="assets/Figma-min.png" alt="Figma">
+                    <img class="about-me__tecnology" src="assets/html5-min.png" alt="HTML5">
+                    <img class="about-me__tecnology" src="assets/css3-min.png" alt="CSS3">
+                    <img class="about-me__tecnology" src="assets/Bootstrap-min.png" alt="Bootstrap">
+                    <img class="about-me__tecnology" src="assets/TailwindCSS-min.png" alt="TailwindCSS">
+                    <img class="about-me__tecnology" src="assets/sass-min.png" alt="Sass">
+                    <img class="about-me__tecnology" src="assets/git-min.png" alt="Git">
+                    <img class="about-me__tecnology" src="assets/github-min.png" alt="GitHub">
+                    <img class="about-me__tecnology" src="assets/javascript-min.png" alt="JavaScript">
+                    <img class="about-me__tecnology" src="assets/react-min.png" alt="React">
+                    <img class="about-me__tecnology" src="assets/nodejs-min.png" alt="NodeJS">
+                    <img class="about-me__tecnology" src="assets/mongodb-min.png" alt="MongoDB">
+                    <img class="about-me__tecnology" src="assets/webpack-min.png" alt="WebPack">
+                    <img class="about-me__tecnology" src="assets/svg-min.png" alt="SVG">
+                    <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
+                </div>
             </div>
         </section>
         <section class="services" id="services">
-            <h3 class="services__title title">Mis especialidades y habilidades</h3>
+            <div class="services__container container">
+                <h3 class="services__title title">Mis especialidades y habilidades</h3>
 
-            <div class="services__specialties">
+                <div class="services__specialties">
 
-                <div class="services__specialty services__design-ui">
-                    <span class="services__icon"><i class="fa-solid fa-bezier-curve"></i></span>
-                    <h4 class="services__text">Diseño UI / UX</h4>
-                    <p class="services__description">Organizando la informacion y utilizando patrones de diseños
-                        simples,
-                        creamos la mejor experiencia para tus clientes</p>
-                </div>
-                <div class="services__detail services__design-ui">
-                    <div class="services__item">
-                        <span>Wireframes, prototipados y diseño visual</span>
-                        <progress max="100" value="40"> 40%</progress>
+                    <a href="#" class="services__specialty services__specialty--active services__design-ui"
+                        data-area="#design-ui">
+                        <span class="services__icon"><i class="fa-solid fa-bezier-curve"></i></span>
+                        <h4 class="services__text">Diseño UI / UX</h4>
+                        <p class="services__description">Organizando la informacion y utilizando patrones de diseños
+                            simples,
+                            creamos la mejor experiencia para tus clientes</p>
+                    </a>
+                    <div class="services__detail services__detail--active services__design-ui" id="design-ui">
+                        <div class="services__item">
+                            <span>Wireframes, prototipados y diseño visual</span>
+                            <progress max="100" value="40"> 40%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span class="services__item-detail">Organización del flujo de información</span>
+                            <progress class="services__item-progress" max="100" value="30"> 30%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Evaluación de usabilidad y accesibilidad</span>
+                            <progress max="100" value="35"> 35%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Diseño de interfaces en Figma</span>
+                            <progress max="100" value="60"> 60%</progress>
+                        </div>
                     </div>
-                    <div class="services__item">
-                        <span>Organización del flujo de información</span>
-                        <progress max="100" value="30"> 30%</progress>
+
+                    <a href="#" class="services__specialty services__design-web" data-area="#design-web">
+                        <span class="services__icon"><i class="fa-solid fa-window-maximize"></i></span>
+                        <h4 class="services__text">Diseño Web</h4>
+                        <p class="services__description">Maquetare un sitio atractivo y adaptable para cualquier
+                            dispositivo, con SEO para posicionamiento en los buscadores</p>
+                    </a>
+                    <div class="services__detail services__design-web" id="design-web">
+                        <div class="services__item">
+                            <span>Lenguajes HTML5 y CSS3</span>
+                            <progress max="100" value="70"> 70%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Librerías Bootstrap y TailwindCSS</span>
+                            <progress max="100" value="40"> 40%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Variables y animaciones CSS3</span>
+                            <progress max="100" value="40"> 40%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Pre procesador CSS con SASS</span>
+                            <progress max="100" value="20"> 20%</progress>
+                        </div>
                     </div>
-                    <div class="services__item">
-                        <span>Evaluación de usabilidad y accesibilidad</span>
-                        <progress max="100" value="35"> 35%</progress>
+
+                    <a href="#" class="services__specialty services__development-web" data-area="#development-web">
+                        <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
+                        <h4 class="services__text">Diseño Web</h4>
+                        <p class="services__description">Creare un sitio interactivo, fluido y rapido, para que tus
+                            clientes
+                            mejoren su experiencia y disfruten navegar en tu web</p>
+                    </a>
+                    <div class="services__detail services__development-web" id="development-web">
+                        <div class="services__item">
+                            <span>Lenguajes JavaScript</span>
+                            <progress max="100" value="30"> 30%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Stack MondgoDB - Express - React - NodeJS</span>
+                            <progress max="100" value="25"> 25%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Empaquetador de modulos WebPack</span>
+                            <progress max="100" value="25"> 25%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Controlador de versiones Git & GitHub</span>
+                            <progress max="100" value="60"> 60%</progress>
+                        </div>
                     </div>
-                    <div class="services__item">
-                        <span>Diseño de interfaces en Figma</span>
-                        <progress max="100" value="60"> 60%</progress>
+
+                    <a href="#" class="services__specialty services__cms" data-area="#cms">
+                        <span class="services__icon"><i class="fa-brands fa-elementor"></i></span>
+                        <h4 class="services__text">Sistema de gestión de contenidos</h4>
+                        <p class="services__description">Con un diseño atractivo, rapido y facil de usar, podemos dar de
+                            alta a tu web y dar a conocer tu marca</p>
+                    </a>
+                    <div class="services__detail services__cms" id="cms">
+                        <div class="services__item">
+                            <span>Instalación y personalización de temas en Wordpress</span>
+                            <progress max="100" value="30"> 30%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Editores visuales Elementor y Divi</span>
+                            <progress max="100" value="25"> 25%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Habilidades en Ventas y Marketing</span>
+                            <progress max="100" value="40"> 40%</progress>
+                        </div>
+                        <div class="services__item">
+                            <span>Conocimiento en PHP y MySQL</span>
+                            <progress max="100" value="60"> 60%</progress>
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="services__specialty services__design-web">
-                    <span class="services__icon"><i class="fa-solid fa-window-maximize"></i></span>
-                    <h4 class="services__text">Diseño Web</h4>
-                    <p class="services__description">Maquetare un sitio atractivo y adaptable para cualquier
-                        dispositivo, con SEO para posicionamiento en los buscadores</p>
-                </div>
-                <div class="services__detail services__design-web">
-                    <div class="services__item">
-                        <span>Lenguajes HTML5 y CSS3</span>
-                        <progress max="100" value="70"> 70%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Librerías Bootstrap y TailwindCSS</span>
-                        <progress max="100" value="40"> 40%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Variables y animaciones CSS3</span>
-                        <progress max="100" value="40"> 40%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Pre procesador CSS con SASS</span>
-                        <progress max="100" value="20"> 20%</progress>
-                    </div>
-                </div>
-
-                <div class="services__specialty services__development-web">
-                    <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
-                    <h4 class="services__text">Diseño Web</h4>
-                    <p class="services__description">Creare un sitio interactivo, fluido y rapido, para que tus clientes
-                        mejoren su experiencia y disfruten navegar en tu web</p>
-                </div>
-                <div class="services__detail services__development-web">
-                    <div class="services__item">
-                        <span>Lenguajes JavaScript</span>
-                        <progress max="100" value="30"> 30%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Stack MondgoDB - Express - React - NodeJS</span>
-                        <progress max="100" value="25"> 25%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Empaquetador de modulos WebPack</span>
-                        <progress max="100" value="25"> 25%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Controlador de versiones Git & GitHub</span>
-                        <progress max="100" value="60"> 60%</progress>
-                    </div>
-                </div>
-
-                <div class="services__specialty services__cms">
-                    <span class="services__icon"><i class="fa-brands fa-elementor"></i></span>
-                    <h4 class="services__text">Sistema de gestión de contenidos</h4>
-                    <p class="services__description">Con un diseño atractivo, rapido y facil de usar, podemos dar de
-                        alta a tu web y dar a conocer tu marca</p>
-                </div>
-                <div class="services__detail services__cms">
-                    <div class="services__item">
-                        <span>Instalación y personalización de temas en Wordpress</span>
-                        <progress max="100" value="30"> 30%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Editores visuales Elementor y Divi</span>
-                        <progress max="100" value="25"> 25%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Habilidades en Ventas y Marketing</span>
-                        <progress max="100" value="40"> 40%</progress>
-                    </div>
-                    <div class="services__item">
-                        <span>Conocimiento en PHP y MySQL</span>
-                        <progress max="100" value="60"> 60%</progress>
-                    </div>
-                </div>
-
+                <span class="services__action">
+                    ¿Buscas un trabajo personalizado? <a href="#" class="services__contact">¿Da click aquí para
+                        contactame!</a>
+                </span>
             </div>
-            <span class="services__action">
-                ¿Buscas un trabajo personalizado? <a href="#" class="services__contact">¿Da click aquí para
-                    contactame!</a>
-            </span>
         </section>
         <section class="projects" id="projects">
-            <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
-            <div class="projects__filters">
-                <a href="#" class="btn btn-secondary">Todos</a>
-                <a href="#" class="btn btn-secondary">Diseños</a>
-                <a href="#" class="btn btn-secondary">E-commerce</a>
-                <a href="#" class="btn btn-secondary">Marketing</a>
-            </div>
-            <div class="projects__content">
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+            <div class="container">
+                <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
+                <div class="projects__filters scroll">
+                    <a href="#" class="btn btn-secondary">Todos</a>
+                    <a href="#" class="btn btn-secondary">Plantillas</a>
+                    <a href="#" class="btn btn-secondary">Apps</a>
+                    <a href="#" class="btn btn-secondary">Experimentos</a>
+                </div>
+                <div class="projects__content">
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg"
-                        alt="Portafolio web de un Diseñador">
-                    <div class="projects__description">
-                        <span class="projects__tag">Diseño UI</span>
-                        <div class="projects__detail">
-                            <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                            <span class="projects__text">Portafolio web de un Diseñador</span>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
