@@ -48,11 +48,11 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about-me" class="nav__link">
+                        <a href="#projects" class="nav__link">
                             <span class="nav__icon">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-briefcase"></i>
                             </span>
-                            <span class="nav__text">Sobre mí</span>
+                            <span class="nav__text">Proyectos</span>
                         </a>
                     </li>
                     <li class="nav__item">
@@ -64,11 +64,11 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
+                        <a href="#about-me" class="nav__link">
                             <span class="nav__icon">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <i class="fa-solid fa-user"></i>
                             </span>
-                            <span class="nav__text">Proyectos</span>
+                            <span class="nav__text">Sobre mí</span>
                         </a>
                     </li>
                     <li class="nav__active">
@@ -115,59 +115,82 @@
         </div>
     </header>
     <main>
-        <section class="about-me" id="about-me">
-            <div class="about-me__container container">
-                <h3 class="about-me__title title">Conoce mas sobre mí</h3>
-                <div class="about-me__card">
-                    <picture class="about-me__picture">
-                        <source class="about-me__image" media="(min-width:1024px)" srcset="assets/about-me-desktop.png">
-                        <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
-                    </picture>
-                    <div class="about-me__content">
-                        <div class="about-me__description">
-                            <p>Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y
-                                creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
-                            <a href="#" class="btn btn-primary">
-                                <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                                <span class="btn__text">Contáctame</span>
-                            </a>
-                        </div>
-                        <div class="about-me__skills">
-                            <div class="about-me__skill">
-                                <span class="about-me__icon"><i class="fa-solid fa-briefcase"></i> 6 </span>
-                                <span class="about-me__text">Proyectos</span>
-                            </div>
-                            <div class="about-me__skill">
-                                <span class="about-me__icon"><i class="fa-solid fa-award"></i> 4 </span>
-                                <span class="about-me__text">Especialidades</span>
-                            </div>
-                            <div class="about-me__skill">
-                                <span class="about-me__icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
-                                <span class="about-me__text">Herramientas y tecnologías</span>
-                            </div>
-                            <div class="about-me__skill">
-                                <span class="about-me__icon"><i class="fa-solid fa-heart"></i> 100% </span>
-                                <span class="about-me__text">Pasión y conocimiento</span>
-                            </div>
-                        </div>
-                    </div>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
+                <div class="projects__filters scroll">
+                    <a href="#" class="btn btn-secondary">Todos</a>
+                    <a href="#" class="btn btn-secondary">Plantillas</a>
+                    <a href="#" class="btn btn-secondary">Apps</a>
+                    <a href="#" class="btn btn-secondary">Experimentos</a>
                 </div>
-                <div class="about-me__tecnologies">
-                    <img class="about-me__tecnology" src="assets/Figma-min.png" alt="Figma">
-                    <img class="about-me__tecnology" src="assets/html5-min.png" alt="HTML5">
-                    <img class="about-me__tecnology" src="assets/css3-min.png" alt="CSS3">
-                    <img class="about-me__tecnology" src="assets/Bootstrap-min.png" alt="Bootstrap">
-                    <img class="about-me__tecnology" src="assets/TailwindCSS-min.png" alt="TailwindCSS">
-                    <img class="about-me__tecnology" src="assets/sass-min.png" alt="Sass">
-                    <img class="about-me__tecnology" src="assets/git-min.png" alt="Git">
-                    <img class="about-me__tecnology" src="assets/github-min.png" alt="GitHub">
-                    <img class="about-me__tecnology" src="assets/javascript-min.png" alt="JavaScript">
-                    <img class="about-me__tecnology" src="assets/react-min.png" alt="React">
-                    <img class="about-me__tecnology" src="assets/nodejs-min.png" alt="NodeJS">
-                    <img class="about-me__tecnology" src="assets/mongodb-min.png" alt="MongoDB">
-                    <img class="about-me__tecnology" src="assets/webpack-min.png" alt="WebPack">
-                    <img class="about-me__tecnology" src="assets/svg-min.png" alt="SVG">
-                    <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
+                <div class="projects__content">
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                            alt="Portafolio web de un Diseñador">
+                        <div class="projects__description">
+                            <span class="projects__tag">Diseño UI</span>
+                            <div class="projects__detail">
+                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
+                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -288,140 +311,120 @@
                 </span>
             </div>
         </section>
-        <section class="projects" id="projects">
-            <div class="container">
-                <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
-                <div class="projects__filters scroll">
-                    <a href="#" class="btn btn-secondary">Todos</a>
-                    <a href="#" class="btn btn-secondary">Plantillas</a>
-                    <a href="#" class="btn btn-secondary">Apps</a>
-                    <a href="#" class="btn btn-secondary">Experimentos</a>
+        <section class="about-me" id="about-me">
+            <div class="about-me__container container">
+                <h3 class="about-me__title title">Conoce mas sobre mí</h3>
+                <div class="about-me__card">
+                    <picture class="about-me__picture">
+                        <source class="about-me__image" media="(min-width:1024px)" srcset="assets/about-me-desktop.png">
+                        <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
+                    </picture>
+                    <div class="about-me__content">
+                        <div class="about-me__description">
+                            <p>Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y
+                                creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
+                            <a href="#" class="btn btn-primary">
+                                <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                <span class="btn__text">Contáctame</span>
+                            </a>
+                        </div>
+                        <div class="about-me__skills">
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-briefcase"></i> 6 </span>
+                                <span class="about-me__text">Proyectos</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-award"></i> 4 </span>
+                                <span class="about-me__text">Especialidades</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
+                                <span class="about-me__text">Herramientas y tecnologías</span>
+                            </div>
+                            <div class="about-me__skill">
+                                <span class="about-me__icon"><i class="fa-solid fa-heart"></i> 100% </span>
+                                <span class="about-me__text">Pasión y conocimiento</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects__content">
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
-                            alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
-                            alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
-                            alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
-                            alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
-                            alt="Portafolio web de un Diseñador">
-                        <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
-                            <div class="projects__detail">
-                                <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
-                            </div>
-                        </div>
-                    </a>
+                <div class="about-me__tecnologies">
+                    <img class="about-me__tecnology" src="assets/Figma-min.png" alt="Figma">
+                    <img class="about-me__tecnology" src="assets/html5-min.png" alt="HTML5">
+                    <img class="about-me__tecnology" src="assets/css3-min.png" alt="CSS3">
+                    <img class="about-me__tecnology" src="assets/Bootstrap-min.png" alt="Bootstrap">
+                    <img class="about-me__tecnology" src="assets/TailwindCSS-min.png" alt="TailwindCSS">
+                    <img class="about-me__tecnology" src="assets/sass-min.png" alt="Sass">
+                    <img class="about-me__tecnology" src="assets/git-min.png" alt="Git">
+                    <img class="about-me__tecnology" src="assets/github-min.png" alt="GitHub">
+                    <img class="about-me__tecnology" src="assets/javascript-min.png" alt="JavaScript">
+                    <img class="about-me__tecnology" src="assets/react-min.png" alt="React">
+                    <img class="about-me__tecnology" src="assets/nodejs-min.png" alt="NodeJS">
+                    <img class="about-me__tecnology" src="assets/mongodb-min.png" alt="MongoDB">
+                    <img class="about-me__tecnology" src="assets/webpack-min.png" alt="WebPack">
+                    <img class="about-me__tecnology" src="assets/svg-min.png" alt="SVG">
+                    <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__item">
-            <span class="footer__title">SOBRE MÍ</span>
-            <p class="footer__slogan">Diseño y maquetación de apps y sitios web, en CMS Wordpress o desde cero</p>
-            <div class="footer__social">
-                <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
-            </div>
-        </section>
-        <section class="footer__item">
-            <span class="footer__title">SOBRE MÍ</span>
-            <div class="footer__info">
-                <span><i class="fa-solid fa-location-dot"></i> Lima, Perú</span>
-                <span><i class="fa-brands fa-whatsapp"></i> +</span>
-                <span><i class="fa-solid fa-envelope"></i> pana9422@gmail.com</span>
-            </div>
-        </section>
-        <section class="footer__item">
-            <span class="footer__title">ÚLTIMOS PROYECTOS</span>
-            <div class="footer__projects">
-                <a href="#" class="footer__project">
-                    <img src="assets/projects/portfolio.jpg" alt="Portafolio web">
-                    <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
-                    <span class="footer__project-date">17 MAR 2022</span>
-                </a>
-                <a href="#" class="footer__project">
-                    <img src="assets/projects/portfolio.jpg" alt="Portafolio web">
-                    <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
-                    <span class="footer__project-date">17 MAR 2022</span>
-                </a>
-            </div>
-        </section>
-        <section class="footer__item">
-            <span class="footer__title">ESPECIALIDADES</span>
-            <div class="footer__especialties">
-                <div class="footer__especialty">
-                    <span class="footer__especialty-title">Diseño UX / UI</span>
-                    <progress value="50" class="footer__especialty-progress">60%</progress>
+        <div class="footer__container container">
+            <section class="footer__item">
+                <span class="footer__title">SOBRE MÍ</span>
+                <p class="footer__slogan">Diseño y maquetación de apps y sitios web, en CMS Wordpress o desde cero</p>
+                <div class="footer__social">
+                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
+                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
                 </div>
-                <div class="footer__especialty">
-                    <span class="footer__especialty-title">Diseño Web</span>
-                    <progress value="50" class="footer__especialty-progress">70%</progress>
+            </section>
+            <section class="footer__item">
+                <span class="footer__title">CONTÁCTAME</span>
+                <div class="footer__info">
+                    <span><i class="fa-solid fa-location-dot"></i> Lima, Perú</span>
+                    <span><i class="fa-brands fa-whatsapp"></i> +51 993 393767</span>
+                    <span><i class="fa-solid fa-envelope"></i> pana9422@gmail.com</span>
                 </div>
-                <div class="footer__especialty">
-                    <span class="footer__especialty-title">Programación Web</span>
-                    <progress value="50" class="footer__especialty-progress">30%</progress>
+            </section>
+            <section class="footer__item">
+                <span class="footer__title">ÚLTIMOS PROYECTOS</span>
+                <div class="footer__projects">
+                    <a href="#" class="footer__project">
+                        <img class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web">
+                        <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
+                        <span class="footer__project-date">17 MAR 2022</span>
+                    </a>
+                    <a href="#" class="footer__project">
+                        <img class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web">
+                        <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
+                        <span class="footer__project-date">17 MAR 2022</span>
+                    </a>
                 </div>
-                <div class="footer__especialty">
-                    <span class="footer__especialty-title">Sistema de Gestión de Contenidos</span>
-                    <progress value="50" class="footer__especialty-progress">50%</progress>
+            </section>
+            <section class="footer__item">
+                <span class="footer__title">ESPECIALIDADES</span>
+                <div class="footer__especialties">
+                    <div class="footer__especialty">
+                        <span class="footer__especialty-title">Diseño UX / UI</span>
+                        <progress max="100" value="60" class="footer__especialty-progress">60%</progress>
+                    </div>
+                    <div class="footer__especialty">
+                        <span class="footer__especialty-title">Diseño Web</span>
+                        <progress max="100" value="80" class="footer__especialty-progress">70%</progress>
+                    </div>
+                    <div class="footer__especialty">
+                        <span class="footer__especialty-title">Programación Web</span>
+                        <progress max="100" value="30" class="footer__especialty-progress">30%</progress>
+                    </div>
+                    <div class="footer__especialty">
+                        <span class="footer__especialty-title">Sistema de Gestión de Contenidos</span>
+                        <progress max="100" value="50" class="footer__especialty-progress">50%</progress>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </footer>
 </body>
 
