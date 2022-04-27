@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -34,87 +34,88 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
-            <figure class="nav__brand">
-                <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina">
-            </figure>
-            <ul class="nav__navbar">
-                <li>
-                    <a href="#home" class="nav__link">
-                        <span class="nav__icon">
-                            <i class="fa-solid fa-house"></i>
-                        </span>
-                        <span class="nav__text">Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about-me" class="nav__link">
-                        <span class="nav__icon">
-                            <i class="fa-solid fa-user"></i>
-                        </span>
-                        <span class="nav__text">Sobre mí</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#services" class="nav__link">
-                        <span class="nav__icon">
-                            <i class="fa-solid fa-award"></i>
-                        </span>
-                        <span class="nav__text">Servicios</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav__link">
-                        <span class="nav__icon">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </span>
-                        <span class="nav__text">Proyectos</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="nav__active"></div>
-                </li>
-            </ul>
-            <div class="nav__contact">
-                <a href="#" class="btn btn-primary">
-                    <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                    <span class="btn__text">Contáctame</span>
-                </a>
-            </div>
-        </nav>
-        <div class="banner" id="home">
-            <div class="banner__description">
-                <div class="banner__social">
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
-                </div>
-                <div class="banner__title">
-                    <h1 class="banner__heading">Soy, Miguel J Medina</h1>
-                    <h2>Diseñador UI & Web</h2>
-                </div>
-                <div class="banner__action">
+            <div class="nav__container container">
+                <figure class="nav__brand">
+                    <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina">
+                </figure>
+                <ul class="nav__navbar">
+                    <li class="nav__item nav__item--active">
+                        <a href="#home" class="nav__link">
+                            <span class="nav__icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="nav__text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-me" class="nav__link">
+                            <span class="nav__icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span class="nav__text">Sobre mí</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <span class="nav__icon">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <span class="nav__text">Servicios</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <span class="nav__icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                            <span class="nav__text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav__active">
+                    </li>
+                </ul>
+                <div class="nav__contact">
                     <a href="#" class="btn btn-primary">
                         <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                         <span class="btn__text">Contáctame</span>
                     </a>
-                    <a href="assets/CV.pdf" download class="btn btn-secondary">
-                        <span class="btn__icon"><i class="fa-solid fa-file-pdf"></i></span>
-                        <span class="btn__text">Descarga mi CV</span>
-                    </a>
                 </div>
             </div>
+        </nav>
+        <div class="banner" id="home">
+            <div class="container">
+                <div class="banner__description">
+                    <div class="banner__social">
+                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
+                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
+                    </div>
+                    <div class="banner__title">
+                        <h1 class="banner__heading">Soy, Miguel J Medina</h1>
+                        <h2>Diseñador UI & Web</h2>
+                    </div>
+                    <div class="banner__action">
+                        <a href="#" class="btn btn-primary">
+                            <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span class="btn__text">Contáctame</span>
+                        </a>
+                        <a href="assets/CV.pdf" download class="btn btn-secondary">
+                            <span class="btn__icon"><i class="fa-solid fa-file-pdf"></i></span>
+                            <span class="btn__text">Descarga mi CV</span>
+                        </a>
+                    </div>
+                </div>
 
-            <picture>
-                <source class="banner__me" media="(min-width:1024px)" srcset="assets/me_banner-desktop.png">
-                <img class="banner__me" src="assets/me_banner-mobile.png" alt="Miguel J Medina">
-            </picture>
+                <picture>
+                    <source class="banner__me" media="(min-width:1024px)" srcset="assets/me_banner-desktop.png">
+                    <img class="banner__me" src="assets/me_banner-mobile.png" alt="Miguel J Medina">
+                </picture>
+            </div>
         </div>
     </header>
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <h3 class="about-me__title title">Conoce mas sobre mí</h3>
             <div class="about-me__card">
                 <picture>
@@ -125,10 +126,10 @@
                     <div class="about-me__description">
                         <p>Mi formación profesiona es de un Diseñador UI & Web. Tengo habilidades en el diseño y
                             creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
-                            <a href="#" class="btn btn-primary">
-                                <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                                <span class="btn__text">Contáctame</span>
-                            </a>
+                        <a href="#" class="btn btn-primary">
+                            <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span class="btn__text">Contáctame</span>
+                        </a>
                     </div>
                     <div class="about-me__skills">
                         <div class="about-me__skill">
@@ -167,7 +168,7 @@
                 <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h3 class="services__title title">Mis especialidades y habilidades</h3>
 
             <div class="services__specialties">
@@ -275,10 +276,11 @@
 
             </div>
             <span class="services__action">
-                ¿Buscas un trabajo personalizado? <a href="#" class="services__contact">¿Da click aquí para contactame!</a>
+                ¿Buscas un trabajo personalizado? <a href="#" class="services__contact">¿Da click aquí para
+                    contactame!</a>
             </span>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
             <div class="projects__filters">
                 <a href="#" class="btn btn-secondary">Todos</a>
@@ -288,7 +290,8 @@
             </div>
             <div class="projects__content">
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">
@@ -298,7 +301,8 @@
                     </div>
                 </a>
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">
@@ -308,7 +312,8 @@
                     </div>
                 </a>
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">
@@ -318,7 +323,8 @@
                     </div>
                 </a>
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">
@@ -328,7 +334,8 @@
                     </div>
                 </a>
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">
@@ -338,7 +345,8 @@
                     </div>
                 </a>
                 <a class="projects__item">
-                    <img class="projects__image" src="assets/projects/portfolio.jpg" alt="Portafolio web de un Diseñador">
+                    <img class="projects__image" src="assets/projects/portfolio.jpg"
+                        alt="Portafolio web de un Diseñador">
                     <div class="projects__description">
                         <span class="projects__tag">Diseño UI</span>
                         <div class="projects__detail">

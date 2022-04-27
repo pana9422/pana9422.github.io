@@ -1,0 +1,36 @@
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .375em .75em;
+    border-radius: .6rem;
+    gap: .4em;
+    transition: background-color .3s;
+}
+.btn-primary{
+    background-color: var(--bermellon-500);
+    color: var(--bermellon-50);
+}
+.btn-primary:hover{
+    background-color: var(--bermellon-700);
+}
+.btn-secondary{
+    background-color: var(--grayDark-500);
+    color: var(--bermellon-50);
+}
+.btn-secondary:hover{
+    background-color: var(--grayDark-400);
+}
+.btn-icon{
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius:  50%;
+    border: 1px solid var(--bermellon-500);
+    color: var(--bermellon-50);
+    background-color: transparent;
+
+    transition: background-color .3s;
+}
+.btn-icon:hover{
+    background-color: var(--bermellon-500);
+}
