@@ -37,17 +37,17 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__container container">
-                <figure class="nav__brand">
+                <a href="index.html" class="nav__brand">
                     <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina">
-                </figure>
+                </a>
                 <ul class="nav__navbar">
-                    <li class="nav__item nav__item--active">
+                    <li class="nav__item nav__item--active" data-url="home" data-position="0">
                         <a href="#home" class="nav__link">
                             <span class="nav__icon"><i class="fa-solid fa-house"></i></span>
                             <span class="nav__text">Inicio</span>
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item" data-url="projects" data-position="1">
                         <a href="#projects" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-briefcase"></i>
@@ -55,7 +55,7 @@
                             <span class="nav__text">Proyectos</span>
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item" data-url="services" data-position="2">
                         <a href="#services" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-award"></i>
@@ -63,7 +63,7 @@
                             <span class="nav__text">Servicios</span>
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item" data-url="about-me" data-position="3">
                         <a href="#about-me" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-user"></i>
@@ -75,14 +75,14 @@
                     </li>
                 </ul>
                 <div class="nav__contact">
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="btn btn-primary">
                         <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                         <span class="btn__text">Contáctame</span>
                     </a>
                 </div>
             </div>
         </nav>
-        <div class="banner" id="home">
+        <div class="banner section" id="home">
             <div class="banner__container container">
                 <div class="banner__description">
                     <div class="banner__social">
@@ -96,7 +96,7 @@
                         <h2 class="banner__profession">Diseñador <span> UI & Web</span></h2>
                     </div>
                     <div class="banner__action">
-                        <a href="#" class="btn btn-primary">
+                        <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="btn btn-primary">
                             <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                             <span class="btn__text">Contáctame</span>
                         </a>
@@ -108,21 +108,20 @@
                 </div>
 
                 <picture>
-                    <source class="banner__me" media="(min-width:1024px)" srcset="assets/me_banner-desktop.png">
+                    <source class="banner__me" media="(min-width:768px)" srcset="assets/me_banner-desktop.png">
                     <img class="banner__me" src="assets/me_banner-mobile.png" alt="Miguel J Medina">
                 </picture>
             </div>
         </div>
     </header>
     <main>
-        <section class="projects" id="projects">
+        <section class="projects section" id="projects">
             <div class="container">
                 <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
-                <div class="projects__filters scroll">
+                <div class="projects__filters">
                     <a href="#" class="btn btn-secondary">Todos</a>
                     <a href="#" class="btn btn-secondary">Plantillas</a>
                     <a href="#" class="btn btn-secondary">Apps</a>
-                    <a href="#" class="btn btn-secondary">Experimentos</a>
                 </div>
                 <div class="projects__content">
                     <a href="#" class="projects__item">
@@ -194,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <section class="services" id="services">
+        <section class="services section" id="services">
             <div class="services__container container">
                 <h3 class="services__title title">Mis especialidades y habilidades</h3>
 
@@ -254,7 +253,7 @@
 
                     <a href="#" class="services__specialty services__development-web" data-area="#development-web">
                         <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
-                        <h4 class="services__text">Diseño Web</h4>
+                        <h4 class="services__text">Desarrollo Web</h4>
                         <p class="services__description">Creare un sitio interactivo, fluido y rapido, para que tus
                             clientes
                             mejoren su experiencia y disfruten navegar en tu web</p>
@@ -306,23 +305,23 @@
                 </div>
 
                 <span class="services__action">
-                    ¿Buscas un trabajo personalizado? <a href="#" class="services__contact">¿Da click aquí para
+                    ¿Buscas un trabajo personalizado? <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="services__contact">¿Da click aquí para
                         contactame!</a>
                 </span>
             </div>
         </section>
-        <section class="about-me" id="about-me">
+        <section class="about-me section" id="about-me">
             <div class="about-me__container container">
                 <h3 class="about-me__title title">Conoce mas sobre mí</h3>
                 <div class="about-me__card">
                     <picture class="about-me__picture">
-                        <source class="about-me__image" media="(min-width:1024px)" srcset="assets/about-me-desktop.png">
+                        <source class="about-me__image" media="(min-width: 1024px)" srcset="assets/about-me-desktop.png">
                         <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
                     </picture>
                     <div class="about-me__content">
                         <div class="about-me__description">
                             <p>Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y
-                                creación de sitios web, desarrollados desde cero o utilizando un CMS como Wordpress</p>
+                                creación de sitios web, desarrollados desde cero o utilizando Wordpress</p>
                             <a href="#" class="btn btn-primary">
                                 <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                                 <span class="btn__text">Contáctame</span>
@@ -348,27 +347,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-me__tecnologies">
-                    <img class="about-me__tecnology" src="assets/Figma-min.png" alt="Figma">
-                    <img class="about-me__tecnology" src="assets/html5-min.png" alt="HTML5">
-                    <img class="about-me__tecnology" src="assets/css3-min.png" alt="CSS3">
-                    <img class="about-me__tecnology" src="assets/Bootstrap-min.png" alt="Bootstrap">
-                    <img class="about-me__tecnology" src="assets/TailwindCSS-min.png" alt="TailwindCSS">
-                    <img class="about-me__tecnology" src="assets/sass-min.png" alt="Sass">
-                    <img class="about-me__tecnology" src="assets/git-min.png" alt="Git">
-                    <img class="about-me__tecnology" src="assets/github-min.png" alt="GitHub">
-                    <img class="about-me__tecnology" src="assets/javascript-min.png" alt="JavaScript">
-                    <img class="about-me__tecnology" src="assets/react-min.png" alt="React">
-                    <img class="about-me__tecnology" src="assets/nodejs-min.png" alt="NodeJS">
-                    <img class="about-me__tecnology" src="assets/mongodb-min.png" alt="MongoDB">
-                    <img class="about-me__tecnology" src="assets/webpack-min.png" alt="WebPack">
-                    <img class="about-me__tecnology" src="assets/svg-min.png" alt="SVG">
-                    <img class="about-me__tecnology" src="assets/wordpress-min.png" alt="Wordpress">
-                </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__container container">
             <section class="footer__item">
                 <span class="footer__title">SOBRE MÍ</span>
@@ -391,6 +373,11 @@
             <section class="footer__item">
                 <span class="footer__title">ÚLTIMOS PROYECTOS</span>
                 <div class="footer__projects">
+                    <a href="#" class="footer__project">
+                        <img class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web">
+                        <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
+                        <span class="footer__project-date">17 MAR 2022</span>
+                    </a>
                     <a href="#" class="footer__project">
                         <img class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web">
                         <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
