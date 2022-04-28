@@ -36,39 +36,53 @@
     background-color: var(--bermellon-500);
 }
 
+@media screen and (min-width: 1024px) {
+    .btn-icon{
+        width: 4rem;
+        height: 4rem;
+    }    
+}
 /* Titulos */
 .title{
-    --opacity: .5;
     position: relative;
     width: 100%;
     z-index: 1;
     display: flex;
-    align-items: flex-end;
-    height: 5rem;
-    font-size: var(--font-size-xl);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     line-height: 1.2;
     font-weight: 700;
     color: var(--grayDark-400);
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+    max-width: 50rem;
+    text-shadow: .5rem 1rem 0 var(--amber-200);
 }
+.title::after,
 .title::before{
     content: '';
-    position: absolute;
-    background-image: url('../assets/background.png');
-    background-size: cover;
-    width: 5rem;
-    height: 5rem;
-    z-index: -1;
-    opacity: var(--opacity);
+    color: transparent;
+    background-color: var(--amber-400);
+    width: 100%;
+    height: .2rem;
+    flex-grow: 1;
+    border-radius: .2rem;
+}
+.title__text{
+    white-space: nowrap;
+    text-align: center;
+    font-size: var(--font-size-lg);
 }
 /* Scroll */
 /* Barras de fondo - Dark*/
 .scroll{
-    --bg-track: var(--zinc-600);
+    --bg-track: var(--neutral-400);
     --bg-thumb: transparent;
 }
 .scroll::-webkit-scrollbar{
-    width: 0;
-    height: 0;
+    width: 1rem;
+    /* height: 1rem; */
 }
 /* Botones para desplazamiento */
 .scroll::-webkit-scrollbar-button{

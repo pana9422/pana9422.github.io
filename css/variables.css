@@ -1,5 +1,6 @@
 :root{
-    --font-size-2xl: 2.8rem;
+    --font-size-3xl: 5rem;
+    --font-size-2xl: 4rem;
     --font-size-xl: 2rem;
     --font-size-lg: 1.6rem;
     --font-size-md: 1.4rem;
@@ -14,22 +15,30 @@
     --neutral-700: #727272;
 
     --bermellon-50: #FBEFEE;
+    --bermellon-100: #F7DEDC;
     --bermellon-200: #F0BEBA;
     --bermellon-400: #E17D75;
     --bermellon-500: #D95C52;
     --bermellon-700: #AE4A42;
 
+    --esmeralde-50: #ECFDF5;
+    --esmeralde-100: #D1FAE5;
     --esmeralde-200: #A7F3D0;
     --esmeralde-400: #34D399;
     
     --amber-50: #FFFBEB;
+    --amber-100: #FEF3C7;
     --amber-200: #FDE68A;
     --amber-400: #FBBF24;
 
+    --france-50: #EAF4FD;
+    --france-100: #D5E8FA;
     --france-200: #ACD1F5;
     --france-400: #59A4EC;
 
     --grayDark-50: #92949A;
+    --grayDark-100: #7C7F85 ;
+    --grayDark-300: #51545D ;
     --grayDark-400: #3B3E48 ;
     --grayDark-500: #252934;
     --grayDark-800: #1A1D24;
@@ -38,8 +47,9 @@
 
 @media screen and (min-width: 1024px) {
     :root{
-        --font-size-2xl: 4rem;
-        --font-size-xl: 3rem;
+        --font-size-3xl: 8rem;
+        --font-size-2xl: 5rem;
+        --font-size-xl: 2.8rem;
         --font-size-lg: 2.2rem;
         --font-size-md: 1.6rem;
         --font-size-sm: 1.4rem;

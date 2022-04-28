@@ -25,17 +25,17 @@
     <link rel="preload stylesheet" href="css/app.css" as="style">
     <link rel="preload" href="js/app.js" as="script">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/app.js"></script>
 
 </head>
 
-<body>
+<body class="scroll">
     <header class="header">
         <nav class="nav">
-            <div class="nav__container container">
+            <div class="nav__container">
                 <a href="index.html" class="nav__brand">
                     <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina">
                 </a>
@@ -74,9 +74,10 @@
                     </li>
                 </ul>
                 <div class="nav__contact">
-                    <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="btn btn-primary">
+                    <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
+                        target="_blank" class="btn btn-primary">
                         <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                        <span class="btn__text">Contáctame</span>
+                        <span class="btn__text">Hablemos para trabajar</span>
                     </a>
                 </div>
             </div>
@@ -85,29 +86,30 @@
             <div class="banner__container container">
                 <div class="banner__description">
                     <div class="banner__social">
-                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                        <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
+                        <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
                     </div>
                     <div class="banner__title">
-                        <h1 class="banner__heading">Soy Miguel J Medina</h1>
-                        <h2 class="banner__profession">Diseñador <span> UI & Web</span></h2>
+                        <h1 class="banner__profession">Diseñador <span> UI & Web</span></h1>
+                        <h2 class="banner__heading">Me llamo, Miguel J Medina</h2>
                     </div>
                     <div class="banner__action">
-                        <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="btn btn-primary">
+                        <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
+                            target="_blank" class="btn btn-primary">
                             <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                             <span class="btn__text">Contáctame</span>
                         </a>
+                        <span class="banner__separator">ó</span>
                         <a href="assets/CV.pdf" download class="btn btn-secondary">
-                            <span class="btn__icon"><i class="fa-solid fa-file-pdf"></i></span>
                             <span class="btn__text">Descarga mi CV</span>
                         </a>
                     </div>
                 </div>
 
                 <picture>
-                    <source class="banner__me" media="(min-width:768px)" srcset="assets/me_banner-desktop.png">
+                    <source class="about-me__image" media="(min-width: 768px)" srcset="assets/about-me-desktop.png">
                     <img class="banner__me" src="assets/me_banner-mobile.png" alt="Miguel J Medina">
                 </picture>
             </div>
@@ -115,12 +117,14 @@
     </header>
     <main>
         <section class="projects section" id="projects">
-            <div class="container">
-                <h3 class="projects__title title">Últimos proyectos y experimentos</h3>
+            <div class="projects__container container">
+                <div class="title">
+                    <h3 class="projects__title title__text">Proyectos y experimentos</h3>
+                </div>
                 <div class="projects__filters">
-                    <a href="#" class="btn btn-secondary">Todos</a>
-                    <a href="#" class="btn btn-secondary">Plantillas</a>
-                    <a href="#" class="btn btn-secondary">Apps</a>
+                    <a href="#projects" class="btn btn-secondary">Todos</a>
+                    <a href="#projects" class="btn btn-secondary">Plantillas</a>
+                    <a href="#projects" class="btn btn-secondary">Apps</a>
                 </div>
                 <div class="projects__content">
                     <a href="#" class="projects__item">
@@ -194,7 +198,9 @@
         </section>
         <section class="services section" id="services">
             <div class="services__container container">
-                <h3 class="services__title title">Mis especialidades y habilidades</h3>
+                <div class="title">
+                    <h3 class="projects__title title__text">Conocimientos y habilidades</h3>
+                </div>
 
                 <div class="services__specialties">
 
@@ -304,24 +310,30 @@
                 </div>
 
                 <span class="services__action">
-                    ¿Buscas un trabajo personalizado? <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto" target="_blank" class="services__contact">¿Da click aquí para
-                        contactame!</a>
+                    ¿Buscas un trabajo personalizado? <a
+                        href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
+                        target="_blank" class="services__contact">¿Da click aquí para contactarme!</a>
                 </span>
             </div>
         </section>
         <section class="about-me section" id="about-me">
             <div class="about-me__container container">
-                <h3 class="about-me__title title">Conoce mas sobre mí</h3>
+                <div class="title">
+                    <h3 class="about-me__title title__text">Conoce mas sobre mí</h3>
+                </div>
                 <div class="about-me__card">
                     <picture class="about-me__picture">
-                        <source class="about-me__image" media="(min-width: 1024px)" srcset="assets/about-me-desktop.png">
+                        <source class="about-me__image" media="(min-width: 1024px)"
+                            srcset="assets/me_banner-desktop.png">
+
                         <img class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina">
                     </picture>
                     <div class="about-me__content">
                         <div class="about-me__description">
                             <p>Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y
                                 creación de sitios web, desarrollados desde cero o utilizando Wordpress</p>
-                            <a href="#" class="btn btn-primary">
+                            <a href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
+                                target="_blank" class="btn btn-primary">
                                 <span class="btn__icon"><i class="fa-brands fa-whatsapp"></i></span>
                                 <span class="btn__text">Contáctame</span>
                             </a>
@@ -355,10 +367,10 @@
                 <span class="footer__title">SOBRE MÍ</span>
                 <p class="footer__slogan">Diseño y maquetación de apps y sitios web, en CMS Wordpress o desde cero</p>
                 <div class="footer__social">
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                    <a href="#" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
+                    <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
                 </div>
             </section>
             <section class="footer__item">
