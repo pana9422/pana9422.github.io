@@ -9,6 +9,10 @@
     <meta name="description"
         content="Diseño y desarrollo de apps web, Desarrollo web con NodeJS - React - MongoDB - Express.">
     <meta name="theme-color" content="#D95C52">
+
+    <link rel="preload" href="css/app.css" as="style">
+    <link rel="preload" href="js/app.js" as="script">
+
     <meta property="og:title" content="Diseñador UI & Web | Miguel J Medina">
     <meta property="og:description"
         content="Diseño y desarrollo de apps web, Desarrollo web con NodeJS - React - MongoDB - Express.">
@@ -21,15 +25,10 @@
     <meta property="og:image:type" content="image/jpg">
 
 
-    <link rel="preload" href="assets/brand.jpg" as="image">
-    <link rel="preload stylesheet" href="css/app.css" as="style">
-    <link rel="preload" href="js/app.js" as="script">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <script defer src="js/app.js"></script>
-
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body class="scroll">
@@ -82,14 +81,18 @@
                 </div>
             </div>
         </nav>
-        <div class="banner section" id="home">
+        <div class="banner" id="home">
             <div class="banner__container container">
                 <div class="banner__description">
-                    <div class="banner__social">
-                        <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                        <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
+                    <div class="banner__social intObs">
+                        <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank"
+                            class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i
+                                class="fa-brands fa-codepen"></i></a>
+                        <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i
+                                class="fa-brands fa-github-alt"></i></a>
                     </div>
                     <div class="banner__title">
                         <h1 class="banner__profession">Diseñador <span> UI & Web</span></h1>
@@ -116,101 +119,118 @@
         </div>
     </header>
     <main>
-        <section class="projects section" id="projects">
+        <section class="projects" id="projects">
             <div class="projects__container container">
-                <div class="title">
+                <div class="title intObs">
                     <h3 class="projects__title title__text">Proyectos y experimentos</h3>
                 </div>
                 <div class="projects__filters">
-                    <a href="#projects" class="btn btn-secondary">Todos</a>
-                    <a href="#projects" class="btn btn-secondary">Plantillas</a>
-                    <a href="#projects" class="btn btn-secondary">Apps</a>
+                    <a href="#projects" class="projects__button projects__button--active btn btn-secondary" data-filter="all">Todos</a>
+                    <a href="#projects" class="projects__button btn btn-secondary" data-filter="theme">Plantillas</a>
+                    <a href="#projects" class="projects__button btn btn-secondary" data-filter="app">Apps</a>
                 </div>
                 <div class="projects__content">
-                    <a href="#" class="projects__item">
+                    <a href="#" class="projects__item show" data-type="theme">
                         <img class="projects__image" src="assets/projects/portfolio.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">Portafolio</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
                                 <span class="projects__text">Portafolio web de un Diseñador</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="projects__item">
+                    <a href="#" class="projects__item show" data-type="theme">
                         <img class="projects__image" src="assets/projects/portfolio.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">Landing Page</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                                <span class="projects__text">Promocionando un producto</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                    <a href="#" class="projects__item show" data-type="app">
+                        <img class="projects__image" src="assets/projects/layblu.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">E-commerce</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                                <span class="projects__text">Tienda online de una ferretería</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                    <a href="#" class="projects__item show" data-type="app">
+                        <img class="projects__image" src="assets/projects/layblu.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">Plataforma de cursos</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                                <span class="projects__text">Venta de cursos y suscripcion de barberia</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="projects__item">
-                        <img class="projects__image" src="assets/projects/portfolio.jpg"
+                    <a href="#" class="projects__item show" data-type="app">
+                        <img class="projects__image" src="assets/projects/layblu.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">Plataforma escolar</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                                <span class="projects__text">Sistema de docentes y alumnos</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="projects__item">
+                    <a href="#" class="projects__item show" data-type="theme">
                         <img class="projects__image" src="assets/projects/portfolio.jpg"
                             alt="Portafolio web de un Diseñador">
                         <div class="projects__description">
-                            <span class="projects__tag">Diseño UI</span>
+                            <span class="projects__tag">Landing Page</span>
                             <div class="projects__detail">
                                 <span class="projects__icon"><i class="fa-solid fa-eye"></i></span>
-                                <span class="projects__text">Portafolio web de un Diseñador</span>
+                                <span class="projects__text">Carta menu para un restaurante</span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="services section" id="services">
+        <section class="services" id="services">
             <div class="services__container container">
-                <div class="title">
+                <div class="title intObs">
                     <h3 class="projects__title title__text">Conocimientos y habilidades</h3>
                 </div>
 
                 <div class="services__specialties">
-
                     <a href="#" class="services__specialty services__specialty--active services__design-ui"
-                        data-area="#design-ui">
+                        data-area="design-ui">
                         <span class="services__icon"><i class="fa-solid fa-bezier-curve"></i></span>
                         <h4 class="services__text">Diseño UI / UX</h4>
-                        <p class="services__description">Organizando la informacion y utilizando patrones de diseños
-                            simples,
+                        <p class="services__description">Organizando la informacion y utilizando patrones de diseños,
                             creamos la mejor experiencia para tus clientes</p>
+                    </a>
+                    <a href="#" class="services__specialty services__design-web" data-area="design-web">
+                        <span class="services__icon"><i class="fa-solid fa-window-maximize"></i></span>
+                        <h4 class="services__text">Diseño Web</h4>
+                        <p class="services__description">Maquetare un sitio adaptable para cualquier
+                            dispositivo, con SEO para los buscadores</p>
+                    </a>
+                    <a href="#" class="services__specialty services__development-web" data-area="development-web">
+                        <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
+                        <h4 class="services__text">Desarrollo Web</h4>
+                        <p class="services__description">Creare un sitio interactivo y fluido, para que tus
+                            clientes
+                            mejoren su experiencia y disfruten navegar en tu web</p>
+                    </a>
+                    <a href="#" class="services__specialty services__cms" data-area="cms">
+                        <span class="services__icon"><i class="fa-brands fa-elementor"></i></span>
+                        <h4 class="services__text">Sistema de gestión de contenidos</h4>
+                        <p class="services__description">Con un diseño atractivo, rapido y facil de usar, podemos dar de
+                            alta a tu web y dar a conocer tu marca</p>
                     </a>
                     <div class="services__detail services__detail--active services__design-ui" id="design-ui">
                         <div class="services__item">
@@ -230,13 +250,6 @@
                             <progress max="100" value="60"> 60%</progress>
                         </div>
                     </div>
-
-                    <a href="#" class="services__specialty services__design-web" data-area="#design-web">
-                        <span class="services__icon"><i class="fa-solid fa-window-maximize"></i></span>
-                        <h4 class="services__text">Diseño Web</h4>
-                        <p class="services__description">Maquetare un sitio atractivo y adaptable para cualquier
-                            dispositivo, con SEO para posicionamiento en los buscadores</p>
-                    </a>
                     <div class="services__detail services__design-web" id="design-web">
                         <div class="services__item">
                             <span>Lenguajes HTML5 y CSS3</span>
@@ -255,14 +268,6 @@
                             <progress max="100" value="20"> 20%</progress>
                         </div>
                     </div>
-
-                    <a href="#" class="services__specialty services__development-web" data-area="#development-web">
-                        <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
-                        <h4 class="services__text">Desarrollo Web</h4>
-                        <p class="services__description">Creare un sitio interactivo, fluido y rapido, para que tus
-                            clientes
-                            mejoren su experiencia y disfruten navegar en tu web</p>
-                    </a>
                     <div class="services__detail services__development-web" id="development-web">
                         <div class="services__item">
                             <span>Lenguajes JavaScript</span>
@@ -281,13 +286,6 @@
                             <progress max="100" value="60"> 60%</progress>
                         </div>
                     </div>
-
-                    <a href="#" class="services__specialty services__cms" data-area="#cms">
-                        <span class="services__icon"><i class="fa-brands fa-elementor"></i></span>
-                        <h4 class="services__text">Sistema de gestión de contenidos</h4>
-                        <p class="services__description">Con un diseño atractivo, rapido y facil de usar, podemos dar de
-                            alta a tu web y dar a conocer tu marca</p>
-                    </a>
                     <div class="services__detail services__cms" id="cms">
                         <div class="services__item">
                             <span>Instalación y personalización de temas en Wordpress</span>
@@ -306,9 +304,7 @@
                             <progress max="100" value="60"> 60%</progress>
                         </div>
                     </div>
-
                 </div>
-
                 <span class="services__action">
                     ¿Buscas un trabajo personalizado? <a
                         href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
@@ -316,9 +312,9 @@
                 </span>
             </div>
         </section>
-        <section class="about-me section" id="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me__container container">
-                <div class="title">
+                <div class="title intObs">
                     <h3 class="about-me__title title__text">Conoce mas sobre mí</h3>
                 </div>
                 <div class="about-me__card">
@@ -367,10 +363,14 @@
                 <span class="footer__title">SOBRE MÍ</span>
                 <p class="footer__slogan">Diseño y maquetación de apps y sitios web, en CMS Wordpress o desde cero</p>
                 <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-codepen"></i></a>
-                    <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank"
+                        class="btn btn-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://codepen.io/pana9422" target="_blank" class="btn btn-icon"><i
+                            class="fa-brands fa-codepen"></i></a>
+                    <a href="https://github.com/pana9422" target="_blank" class="btn btn-icon"><i
+                            class="fa-brands fa-github-alt"></i></a>
                 </div>
             </section>
             <section class="footer__item">

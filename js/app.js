@@ -1,54 +1,55 @@
-const nav_active = document.querySelector(".nav__active");
+// -- Filtro de proyectos
+const button_filter = document.querySelectorAll(".projects__button")
+const projects_item = document.querySelectorAll(".projects__item")
 
-const nav_items = document.querySelectorAll(".nav__item");
-const sections = document.querySelectorAll('.section');
+const showProjects = (button) => {
+  const filter = button.dataset.filter;
 
+  button_filter.forEach( (element) => element.classList.remove('projects__button--active') )
+  projects_item.forEach( (element) => element.classList.remove('show'))
 
-window.res
-// -- posicion del active del NAVBAR
-const activeItemNav = (pos) => {
-  let device = getComputedStyle(nav_active).getPropertyValue('--width')
-  
-  nav_items.forEach((item) => item.classList.remove("nav__item--active"));
-  nav_items[pos].classList.add("nav__item--active");
-  nav_active.style.setProperty("--position", pos);
-  
+  button.classList.add('projects__button--active')
 
-  if (device != '0') {
-    console.log(device);
-    let translate = 0;
-    let width = 80
-    nav_active.style.setProperty("--position", pos);
-
-    for (let i = 0; i < pos; i++) {
-      translate = nav_items[i].clientWidth + translate
-      width = nav_items[i+1].clientWidth
-    }
-    nav_active.style.setProperty("--width", width + 'px');
-    nav_active.style.setProperty("--translate", translate+'px');
-  } 
-};
-nav_items.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    activeItemNav(index);
-  });
+  switch (filter) {
+    case 'all':
+      document.querySelectorAll('.projects__item').forEach( project => project.classList.add('show'))
+      break;
+    default:
+      projects_item.forEach( project => {
+        if ( project.dataset.type == filter) {
+          project.classList.add('show')
+        }
+      })
+      break;
+  }
+}
+button_filter.forEach( button => {
+  button.addEventListener('click', (e) => {
+    showProjects(button)
+  } )
 });
 
 // -- Collapsado de la seccion - SERVICIOS
-const services__item = document.querySelectorAll(".services__specialty");
-const activeRemoveEspecialty = () => {
-  services__item.forEach((item) => {
-    let id = item.getAttribute("data-area");
-    item.classList.remove("services__specialty--active");
-    document.querySelector(id).classList.remove("services__detail--active");
-  });
+const services_specialty = document.querySelectorAll(".services__specialty");
+const services_detail = document.querySelectorAll(".services__detail");
+
+const activeSpecialty = (specialty) => {
+  const area = specialty.dataset.area;
+  
+  services_specialty.forEach((element) => element.classList.remove("services__specialty--active") );
+  services_detail.forEach((element) => element.classList.remove("services__detail--active") );
+  
+  specialty.classList.add("services__specialty--active");
+  document.getElementById(area).classList.add("services__detail--active");
 };
-for (let i = 0; i < services__item.length; i++) {
-  services__item[i].addEventListener("click", (e) => {
-    let id = services__item[i].getAttribute("data-area");
+services_specialty.forEach( specialty => {
+  specialty.addEventListener('click', (e) => {
     e.preventDefault();
-    activeRemoveEspecialty();
-    services__item[i].classList.add("services__specialty--active");
-    document.querySelector(id).classList.add("services__detail--active");
-  });
-}
+    activeSpecialty(specialty)
+  } )
+});
+
+// -- Escapando al enlace de los proyectos
+projects_item.forEach((element) => {
+  element.addEventListener('click', e => e.preventDefault())
+});
