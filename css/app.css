@@ -752,10 +752,6 @@ progress::-webkit-progress-bar {
   .projects__container::after{
     content: '1. TRABAJOS';
   }
-  
-  .projects__item{
-    height: auto;
-  }
   .services__container::after{
     content: '2. HABILIDADES';
   }

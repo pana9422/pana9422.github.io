@@ -133,11 +133,23 @@
 .html5::after{
     content: 'html5';
 }
+.svg::before{
+    background-image: url('../assets/svg-min.png');
+}
+.svg::after{
+    content: 'svg';
+}
 .css3::before{
     background-image: url('../assets/css3-min.png');
 }
 .css3::after{
     content: 'css3';
+}
+.sass::before{
+    background-image: url('../assets/sass-min.png');
+}
+.sass::after{
+    content: 'sass';
 }
 .javascript::before{
     background-image: url('../assets/javascript-min.png');
