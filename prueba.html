@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'open sans';
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background-color: #444;
+        }
+
+        ul {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+            gap: 12px;
+        }
+
+        a {
+            padding: 12px 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color .5s
+        }
+
+        .active,
+        a:hover {
+            background-color: #aaa;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+            font-size: 40px;
+        }
+
+        section:nth-child(even) {
+            background-color: #999
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a data-url="home" href="#home" class="item active">Home</a></li>
+            <li><a data-url="about_me" href="#about_me" class="item">About me</a></li>
+            <li><a data-url="services" href="#services" class="item">Services</a></li>
+            <li><a data-url="contact_me" href="#contact_me" class="item">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section" id="home">Home</section>
+        <section class="section" id="about_me">About me</section>
+        <section class="section" id="services">Services</section>
+        <section class="section" id="contact_me">Contact me</section>
+    </main>
+    <script>
+        const items = document.querySelectorAll('.item')
+        const sections = document.querySelectorAll('.section')
+
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(element => element.classList.remove('active'))
+                item.classList.add('active')
+            })
+        })
+
+        const intObs = entradas => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    const itemNow = Array.from(items).find(
+                        (item) => item.dataset.url === entrada.target.id
+                    );
+                    itemNow.classList.add('active')
+                }
+            });
+        };
+        const observer = new IntersectionObserver(intObs, {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1,
+        });
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>

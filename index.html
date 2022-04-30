@@ -35,17 +35,17 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__container">
-                <a href="index.html" class="nav__brand">
+                <a href="" class="nav__brand">
                     <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina">
                 </a>
-                <ul class="nav__navbar">
-                    <li class="nav__item nav__item--active" data-url="home" data-position="0">
+                <ul class="nav__navbar" data-device="mobile">
+                    <li class="nav__item nav__item--active" data-url="home">
                         <a href="#home" class="nav__link">
                             <span class="nav__icon"><i class="fa-solid fa-house"></i></span>
                             <span class="nav__text">Inicio</span>
                         </a>
                     </li>
-                    <li class="nav__item" data-url="projects" data-position="1">
+                    <li class="nav__item" data-url="projects">
                         <a href="#projects" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-briefcase"></i>
@@ -53,7 +53,7 @@
                             <span class="nav__text">Proyectos</span>
                         </a>
                     </li>
-                    <li class="nav__item" data-url="services" data-position="2">
+                    <li class="nav__item" data-url="services">
                         <a href="#services" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-award"></i>
@@ -61,7 +61,7 @@
                             <span class="nav__text">Servicios</span>
                         </a>
                     </li>
-                    <li class="nav__item" data-url="about-me" data-position="3">
+                    <li class="nav__item" data-url="about-me">
                         <a href="#about-me" class="nav__link">
                             <span class="nav__icon">
                                 <i class="fa-solid fa-user"></i>
@@ -81,10 +81,11 @@
                 </div>
             </div>
         </nav>
-        <div class="banner" id="home">
+        <div class="banner section">
+            <div class="intObs" id="home"></div>
             <div class="banner__container container">
                 <div class="banner__description">
-                    <div class="banner__social intObs">
+                    <div class="banner__social">
                         <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn-icon"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank"
@@ -119,9 +120,10 @@
         </div>
     </header>
     <main>
-        <section class="projects" id="projects">
+        <section class="projects section" id="projects">
+            <div class="intObs" id="projects"></div>
             <div class="projects__container container">
-                <div class="title intObs">
+                <div class="title">
                     <h3 class="projects__title title__text">Proyectos y experimentos</h3>
                 </div>
                 <div class="projects__filters">
@@ -199,9 +201,10 @@
                 </div>
             </div>
         </section>
-        <section class="services" id="services">
+        <section class="services section">
+            <div class="intObs" id="services"></div>
             <div class="services__container container">
-                <div class="title intObs">
+                <div class="title">
                     <h3 class="projects__title title__text">Conocimientos y habilidades</h3>
                 </div>
 
@@ -312,9 +315,10 @@
                 </span>
             </div>
         </section>
-        <section class="about-me" id="about-me">
+        <section class="about-me section">
+            <div class="intObs" id="about-me"></div>
             <div class="about-me__container container">
-                <div class="title intObs">
+                <div class="title">
                     <h3 class="about-me__title title__text">Conoce mas sobre mí</h3>
                 </div>
                 <div class="about-me__card">
