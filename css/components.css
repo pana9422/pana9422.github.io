@@ -55,7 +55,6 @@
     font-weight: 700;
     color: var(--grayDark-400);
     gap: 1.2rem;
-    margin-bottom: 2.4rem;
     max-width: 50rem;
     text-shadow: .5rem 1rem 0 var(--amber-200);
 }
@@ -72,7 +71,7 @@
 .title__text{
     white-space: nowrap;
     text-align: center;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
 }
 /* Scroll */
 /* Barras de fondo - Dark*/
@@ -101,4 +100,84 @@
 }
 .scroll::-webkit-scrollbar-corner{
     background-color: var(--bg-thumb);
+}
+
+/* Tags */
+.tag{
+    font-size: var(--font-size-sm);
+    background-color: var(--grayDark-400);
+    border: 1px solid var(--grayDark-100);
+    padding: .1em .75em .1em .5em;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.tag::before{
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.figma::before{
+    background-image: url('../assets/Figma-min.png');
+}
+.figma::after{
+    content: 'figma';
+}
+.html5::before{
+    background-image: url('../assets/html5-min.png');
+}
+.html5::after{
+    content: 'html5';
+}
+.css3::before{
+    background-image: url('../assets/css3-min.png');
+}
+.css3::after{
+    content: 'css3';
+}
+.javascript::before{
+    background-image: url('../assets/javascript-min.png');
+}
+.javascript::after{
+    content: 'javascript';
+}
+.wordpress::before{
+    background-image: url('../assets/wordpress-min.png');
+}
+.wordpress::after{
+    content: 'wordpress';
+}
+.mongodb::before{
+    background-image: url('../assets/mongodb-min.png');
+}
+.mongodb::after{
+    content: 'mongodb';
+}
+.express::before{
+    background-image: url('../assets/express-min.png');
+}
+.express::after{
+    content: 'express';
+}
+.react::before{
+    background-image: url('../assets/react-min.png');
+}
+.react::after{
+    content: 'react';
+}
+.nodejs::before{
+    background-image: url('../assets/nodejs-min.png');
+}
+.nodejs::after{
+    content: 'nodejs';
+}
+.mysql::before{
+    background-image: url('../assets/mysql-min.png');
+}
+.mysql::after{
+    content: 'mysql';
 }
