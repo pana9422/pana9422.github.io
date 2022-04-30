@@ -200,19 +200,19 @@
   position: relative;
 }
 .projects__item {
-  /* display: none; */
   position: relative;
   width: 100%;
   max-width: 30rem;
-  height: 20rem;
   border-radius: 0.6rem;
   overflow: hidden;
+  height: 0;
   animation: hiddenScale .3s;
   transform: scale(0);
   
 }
 .projects__item.show{
   order: -1;
+  height: auto;
   transform: scale(100%);
   animation: showScale .3s;
 }
@@ -589,7 +589,6 @@ progress::-webkit-progress-bar {
   }
   .projects__item {
     width: 100%;
-    height: auto;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px){
@@ -758,7 +757,7 @@ progress::-webkit-progress-bar {
   .about-me,
   .services,
   .projects {
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 8rem;
   }
   .about-me__container::after,
   .services__container::after,
@@ -773,6 +772,10 @@ progress::-webkit-progress-bar {
   .projects__container::after{
     content: '1. TRABAJOS';
   }
+  
+  .projects__item{
+    height: auto;
+  }
   .services__container::after{
     content: '2. HABILIDADES';
   }
@@ -781,6 +784,7 @@ progress::-webkit-progress-bar {
   }
   .projects__content {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
   }
   
   .about-me__container{
