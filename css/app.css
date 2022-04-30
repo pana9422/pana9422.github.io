@@ -639,7 +639,7 @@ progress::-webkit-progress-bar {
   }
 
   .banner {
-    margin-top: 8rem;
+    padding-top: 8rem;
     background-image: linear-gradient(
       180deg,
       #16191f 0%,
@@ -758,7 +758,7 @@ progress::-webkit-progress-bar {
   .about-me,
   .services,
   .projects {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
   }
   .about-me__container::after,
   .services__container::after,
