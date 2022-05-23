@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Mada";
+    font-style: normal;
+    font-weight: 400;
+    src: local("mada"), local("mada-Regular"), url("/fonts/mada-regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Mada";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Mada-Bold"), local("Mada-Bold"), url("/fonts/mada-bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Mada";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Mada-Black"), local("Mada-Black"), url("/fonts/mada-black.woff2") format("woff2");
+}
