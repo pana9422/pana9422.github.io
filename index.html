@@ -3,10 +3,6 @@
     <head>
         <title>Diseñador UI & Web | Miguel J Medina</title>
 
-        <link rel="preload" href="css/fonts.css" as="style" />
-        <link rel="preload" href="css/app.css" as="style" />
-        <link rel="preload" href="js/app.js" as="script" />
-
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/app.css" />
         <script defer src="js/app.js"></script>
@@ -20,7 +16,7 @@
         <meta property="og:description" content="Diseño y desarrollo de apps web, Desarrollo web con NodeJS - React - MongoDB - Express." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_PE" />
-        <meta property="og:site_name" content="mime.design" />
+        <meta property="og:site_name" content="mimed.dev" />
         <meta property="og:image" content="assets/brand.jpg" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />
@@ -44,11 +40,16 @@
                         <img class="nav__img" src="assets/brand.png" alt="mime.design - Miguel J Medina" />
                     </a>
                     <ul class="nav__navbar" data-device="mobile">
-                        <li class="nav__item nav__item--active" data-url="home">
+                        <li class="nav__item" data-url="home">
                             <a href="#home" class="nav__link">
-                                <span class="nav__icon"
-                                    ><svg viewBox="0 0 50 40"><use href="./assets/icons/logo.svg#logo" /></svg>
-                                </span>
+                                <svg class="nav__icon" viewBox="0 0 50 40">
+                                    <path
+                                        d="M46 4.97461C46 4.43635 45.5523 4 45 4H36.4142C36.149 4 35.8946 4.10268 35.7071 4.28546L25 14.7207V29C25.2422 29 26 28.3651 26 28.3651L34.2929 20.2828C34.9229 19.6689 36 20.1037 36 20.972V32.6863C36 33.0287 36.1843 33.3459 36.4855 33.5221L40.4855 35.8611C40.8022 36.0463 41.1978 36.0463 41.5145 35.8611L45.5145 33.5221C45.8157 33.3459 46 33.0287 46 32.6863V4.97461Z"
+                                    />
+                                    <path
+                                        d="M14.2929 4.28546C14.1054 4.10268 13.851 4 13.5858 4H5C4.44772 4 4 4.43635 4 4.97461V32.6863C4 33.0287 4.1843 33.3459 4.4855 33.5221L8.4855 35.8611C8.80219 36.0463 9.19781 36.0463 9.5145 35.8611L13.5145 33.5221C13.8157 33.3459 14 33.0287 14 32.6863V20.972C14 20.1037 15.0771 19.6689 15.7071 20.2828L23.9634 28.3294C23.9878 28.3532 24.013 28.3755 24.0399 28.3964C24.2041 28.5241 24.8275 29 25 29V14.7207L14.2929 4.28546Z"
+                                    />
+                                </svg>
                                 <span class="nav__text">Inicio</span>
                             </a>
                         </li>
@@ -68,12 +69,12 @@
                                 <span class="nav__text">Servicios</span>
                             </a>
                         </li>
-                        <li class="nav__item" data-url="about-me">
-                            <a href="#about-me" class="nav__link">
+                        <li class="nav__item lg-hidden" data-url="whatsapp">
+                            <a href="#whatsapp" class="nav__link">
                                 <span class="nav__icon">
-                                    <i class="fa-solid fa-user"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
                                 </span>
-                                <span class="nav__text">Sobre mí</span>
+                                <span class="nav__text">Contactame</span>
                             </a>
                         </li>
                         <li class="nav__active"></li>
@@ -139,17 +140,17 @@
                                 <img class="project__image" src="./assets/projects/layblu.png" alt="Layblu - Libreria de componentes" />
                             </a>
                             <section class="project__content">
-                                <h3 class="project__title">LayBlu UI - Libreria de componentes</h3>
+                                <h3 class="project__title">LayBlu UI - Librería de componentes <small class="project__live">En desarrollo</small></h3>
                                 <p class="project__description">
-                                    Es una libreria de componentes donde los usuarios pueden subir su diseños a GitHub, para que cualquier diseñador
-                                    pueda utilizar
+                                    Es una librería de componentes donde los usuarios pueden subir sus diseños a GitHub, para que cualquier diseñador
+                                    pueda utilizarlos
                                 </p>
                                 <p class="project__tag">
-                                    <span class="tag figma"></span>
-                                    <span class="tag react"></span>
-                                    <span class="tag html5"></span>
-                                    <span class="tag css3"></span>
-                                    <span class="tag javascript"></span>
+                                    <span class="tag figma">figma</span>
+                                    <span class="tag react">react</span>
+                                    <span class="tag html5">html5</span>
+                                    <span class="tag css3">css3</span>
+                                    <span class="tag javascript">javascript</span>
                                 </p>
                             </section>
                             <footer class="project__footer">
@@ -164,20 +165,20 @@
                             </footer>
                         </article>
                         <article class="project">
-                            <a class="project__header" href="https://miguel-medina.dev/layblu-ui/" target="_blank" class="project__header">
+                            <a class="project__header" href="https://miguel-medina.dev/music/" target="_blank" class="project__header">
                                 <img class="project__image" src="./assets/projects/newschool.png" alt="Newschool - Web site coorporativo" />
                             </a>
                             <section class="project__content">
-                                <h3 class="project__title">Reproductor de musica - Dezeer</h3>
+                                <h3 class="project__title">Reproductor de música - Dezeer <small class="project__live">En desarrollo</small></h3>
                                 <p class="project__description">
-                                    La App Music se conecta a la Api de Dezzer, donde reproducira las preview de las musicas disponibles. Tambien creo un buscador.
+                                    La App Music se conecta a la Api de Dezzer, donde reproducirá las preview de las músicas disponibles. También
+                                    agregé un buscador.
                                 </p>
                                 <p class="project__tag">
-                                    <span class="tag figma"></span>
-                                    <span class="tag css3"></span>
-                                    <span class="tag javascript"></span>
-                                    <span class="tag react"></span>
-                                    
+                                    <span class="tag figma">figma</span>
+                                    <span class="tag css3">css3</span>
+                                    <span class="tag javascript">javascript</span>
+                                    <span class="tag react">react</span>
                                 </p>
                             </section>
                             <footer class="project__footer">
@@ -192,20 +193,20 @@
                             </footer>
                         </article>
                         <article class="project">
-                            <a class="project__header" href="https://miguel-medina.dev/layblu-ui/" target="_blank" class="project__header">
+                            <a class="project__header" href="https://miguel-medina.dev/newschool/" target="_blank" class="project__header">
                                 <img class="project__image" src="./assets/projects/newschool.png" alt="Newschool - Web site coorporativo" />
                             </a>
                             <section class="project__content">
                                 <h3 class="project__title">IE New School</h3>
                                 <p class="project__description">
-                                    Es un colegio de INICIAL - PRIMARIA - SECUNDARIA, el objetivo del sitio web coorporativo es dar a
-                                    conocer los servicios y presentar información institucional
+                                    Es un colegio de INICIAL - PRIMARIA - SECUNDARIA, el objetivo del sitio web coorporativo es dar a conocer los
+                                    servicios y presentar información institucional
                                 </p>
                                 <p class="project__tag">
-                                    <span class="tag figma"></span>
-                                    <span class="tag html5"></span>
-                                    <span class="tag css3"></span>
-                                    <span class="tag javascript"></span>
+                                    <span class="tag figma">figma</span>
+                                    <span class="tag html5">html5</span>
+                                    <span class="tag css3">css3</span>
+                                    <span class="tag javascript">javascript</span>
                                 </p>
                             </section>
                             <footer class="project__footer">
@@ -225,130 +226,18 @@
             <section class="services section" id="services">
                 <div class="services__container container">
                     <div class="title">
-                        <h3 class="projects__title title__text">Conocimientos y habilidades</h3>
+                        <h3 class="title__text">Conocimientos y habilidades</h3>
                     </div>
-
-                    <div class="services__specialties">
-                        <a href="#" class="services__specialty services__specialty--active services__design-ui" data-area="design-ui">
-                            <span class="services__icon"><i class="fa-solid fa-bezier-curve"></i></span>
-                            <h4 class="services__text">Diseño UI / UX</h4>
-                            <p class="services__description">
-                                Organizando la informacion y utilizando patrones de diseños, creamos la mejor experiencia para tus clientes
-                            </p>
-                        </a>
-                        <a href="#" class="services__specialty services__design-web" data-area="design-web">
-                            <span class="services__icon"><i class="fa-solid fa-window-maximize"></i></span>
-                            <h4 class="services__text">Diseño Web</h4>
-                            <p class="services__description">Maquetare un sitio adaptable para cualquier dispositivo, con SEO para los buscadores</p>
-                        </a>
-                        <a href="#" class="services__specialty services__development-web" data-area="development-web">
-                            <span class="services__icon"><i class="fa-solid fa-laptop-code"></i></span>
-                            <h4 class="services__text">Desarrollo Web</h4>
-                            <p class="services__description">
-                                Creare un sitio interactivo y fluido, para que tus clientes mejoren su experiencia y disfruten navegar en tu web
-                            </p>
-                        </a>
-                        <a href="#" class="services__specialty services__cms" data-area="cms">
-                            <span class="services__icon"><i class="fa-brands fa-elementor"></i></span>
-                            <h4 class="services__text">Sistema de gestión de contenidos</h4>
-                            <p class="services__description">
-                                Con un diseño atractivo, rapido y facil de usar, podemos dar de alta a tu web y dar a conocer tu marca
-                            </p>
-                        </a>
-                        <div class="services__detail services__detail--active services__design-ui" id="design-ui">
-                            <div class="services__item">
-                                <span>Wireframes, prototipados y diseño visual</span>
-                                <progress max="100" value="40">40%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span class="services__item-detail">Organización del flujo de información</span>
-                                <progress class="services__item-progress" max="100" value="30">30%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Evaluación de usabilidad y accesibilidad</span>
-                                <progress max="100" value="35">35%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Diseño de interfaces en Figma</span>
-                                <progress max="100" value="60">60%</progress>
-                            </div>
-                        </div>
-                        <div class="services__detail services__design-web" id="design-web">
-                            <div class="services__item">
-                                <span>Lenguajes HTML5 y CSS3</span>
-                                <progress max="100" value="70">70%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Librerías Bootstrap y TailwindCSS</span>
-                                <progress max="100" value="40">40%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Variables y animaciones CSS3</span>
-                                <progress max="100" value="40">40%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Pre procesador CSS con SASS</span>
-                                <progress max="100" value="20">20%</progress>
-                            </div>
-                        </div>
-                        <div class="services__detail services__development-web" id="development-web">
-                            <div class="services__item">
-                                <span>Lenguajes JavaScript</span>
-                                <progress max="100" value="30">30%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Stack MondgoDB - Express - React - NodeJS</span>
-                                <progress max="100" value="25">25%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Empaquetador de modulos WebPack</span>
-                                <progress max="100" value="25">25%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Controlador de versiones Git & GitHub</span>
-                                <progress max="100" value="60">60%</progress>
-                            </div>
-                        </div>
-                        <div class="services__detail services__cms" id="cms">
-                            <div class="services__item">
-                                <span>Instalación y personalización de temas en Wordpress</span>
-                                <progress max="100" value="30">30%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Editores visuales Elementor y Divi</span>
-                                <progress max="100" value="25">25%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Habilidades en Ventas y Marketing</span>
-                                <progress max="100" value="40">40%</progress>
-                            </div>
-                            <div class="services__item">
-                                <span>Conocimiento en PHP y MySQL</span>
-                                <progress max="100" value="60">60%</progress>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="services__action">
-                        ¿Buscas un trabajo personalizado?
-                        <a
-                            href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
-                            target="_blank"
-                            class="services__contact"
-                            >¿Da click aquí para contactarme!</a
-                        >
-                    </span>
-                    
-                    <div class="about-me__card">
-                        <picture class="about-me__picture">
-                            <source class="about-me__image" media="(min-width: 1024px)" srcset="assets/me_banner-desktop.png" />
-
-                            <img loading="lazy" class="about-me__image" src="assets/about-me-mobile.png" alt="Miguel J Medina" />
+                    <div class="services__about">
+                        <picture class="services__about-picture">
+                            <source class="services__about-image" media="(min-width: 1024px)" srcset="assets/me_banner-desktop.png" />
+                            <img loading="lazy" class="services__about-image" src="assets/about-me-mobile.png" alt="Miguel J Medina" />
                         </picture>
-                        <div class="about-me__content">
-                            <div class="about-me__description">
+                        <div class="services__about-content">
+                            <div class="services__about-description">
                                 <p>
-                                    Mi formación profesional es de un Diseñador UI & Web. Tengo habilidades en el diseño y creación de sitios web,
-                                    desarrollados desde cero o utilizando Wordpress
+                                    Mi formación profesional es de un <strong>Desarrollador Front End</strong>. Tengo habilidades en el diseño y
+                                    creación de sitios y aplicaciones web, desarrolladas con tecnologias base o el stack MERN.
                                 </p>
                                 <a
                                     href="https://api.whatsapp.com/send?phone=993393767&text=Hola, vi tu portafolio y quiero conversar para trabajar en un proyecto"
@@ -359,99 +248,89 @@
                                     <span class="btn__text">Contáctame</span>
                                 </a>
                             </div>
-                            <div class="about-me__skills">
-                                <div class="about-me__skill">
-                                    <span class="about-me__icon"><i class="fa-solid fa-briefcase"></i> 3 </span>
-                                    <span class="about-me__text">Proyectos</span>
+                            <div class="services__about-skills">
+                                <div class="services__about-skill">
+                                    <span class="services__about-icon"><i class="fa-solid fa-briefcase"></i> 3 </span>
+                                    <span class="services__about-text">Proyectos</span>
                                 </div>
-                                <div class="about-me__skill">
-                                    <span class="about-me__icon"><i class="fa-solid fa-award"></i> 4 </span>
-                                    <span class="about-me__text">Especialidades</span>
+                                <div class="services__about-skill">
+                                    <span class="services__about-icon"><i class="fa-solid fa-award"></i> 3 </span>
+                                    <span class="services__about-text">Especialidades</span>
                                 </div>
-                                <div class="about-me__skill">
-                                    <span class="about-me__icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
-                                    <span class="about-me__text">Herramientas y tecnologías</span>
+                                <div class="services__about-skill">
+                                    <span class="services__about-icon"><i class="fa-solid fa-laptop-code"></i> +5 </span>
+                                    <span class="services__about-text">Herramientas y tecnologías</span>
                                 </div>
-                                <div class="about-me__skill">
-                                    <span class="about-me__icon"><i class="fa-solid fa-heart"></i> 100% </span>
-                                    <span class="about-me__text">Pasión y conocimiento</span>
+                                <div class="services__about-skill">
+                                    <span class="services__about-icon"><i class="fa-solid fa-heart"></i> 100% </span>
+                                    <span class="services__about-text">Pasión y conocimiento</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="services__professions">
+                        <article class="services__profession">
+                            <img class="services__image" src="./assets/diseno-web.png" alt="Miguel Medina - Diseño Web" />
+                            <div class="services__detail">
+                                <h3 class="services__title">Diseñador Web</h3>
+                                <p class="services__description">
+                                    Organizando la información y utilizando patrones de diseños, crearé la mejor experiencia.
+                                </p>
+                            </div>
+                            <footer class="services__footer">
+                                <span class="services__question">¿Cómo diseño?</span>
+                                <p class="services__answer">
+                                    Manejo el flujo de la información, wireframes, prototipos, evaluación de usabilidad y accesibilidad
+                                </p>
+                            </footer>
+                        </article>
+                        <article class="services__profession">
+                            <img class="services__image" src="./assets/programacion.png" alt="Miguel Medina - Programacion Web" />
+                            <div class="services__detail">
+                                <h3 class="services__title">Desarrollador Front End</h3>
+                                <p class="services__description">
+                                    Crearé un sitio interactivo, fluido y adaptable para cualquier dispositivo, con SEO para los buscadores
+                                </p>
+                            </div>
+                            <footer class="services__footer">
+                                <span class="services__question">¿Qué lenguajes utilizo?</span>
+                                <p class="services__answer">
+                                    HTML, CSS, JavaScript, Bootstrap, TaildwindCSS, Sass, ReactJS, NodeJs, Express, MongoDB, MySQL y PHP
+                                </p>
+                            </footer>
+                        </article>
+                        <article class="services__profession">
+                            <img class="services__image" src="./assets/tools.png" alt="Miguel Medina - Herramientas de diseño y desarrollo" />
+                            <div class="services__detail">
+                                <h3 class="services__title">Tecnologías usadas</h3>
+                                <p class="services__description">
+                                    Mi stack de herramientas de para la creacción de diseño y desarrollo de sitios y aplicaciones web
+                                </p>
+                            </div>
+                            <footer class="services__footer">
+                                <span class="services__question">¿Cuál es mi stack de herramientas?</span>
+                                <p class="services__answer">
+                                    Notion, Balsamiq Mockups y Figma para el diseño. VSC, NPM, Yarn, Git & GitHub para el desarrollo
+                                </p>
+                            </footer>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="footer" id="footer">
-            <div class="footer__container container">
-                <section class="footer__item">
-                    <span class="footer__title">SOBRE MÍ</span>
-                    <p class="footer__slogan">Diseño y maquetación de apps y sitios web, en CMS Wordpress o desde cero</p>
-                    <div class="footer__social">
-                        <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn--icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn--icon">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://codepen.io/pana9422" target="_blank" class="btn btn--icon">
-                            <i class="fa-brands fa-codepen"></i>
-                        </a>
-                        <a href="https://github.com/pana9422" target="_blank" class="btn btn--icon">
-                            <i class="fa-brands fa-github-alt"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="footer__item">
-                    <span class="footer__title">CONTÁCTAME</span>
-                    <div class="footer__info">
-                        <span><i class="fa-solid fa-location-dot"></i> Lima, Perú</span>
-                        <span><i class="fa-brands fa-whatsapp"></i> +51 993 393767</span>
-                        <span><i class="fa-solid fa-envelope"></i> pana9422@gmail.com</span>
-                    </div>
-                </section>
-                <section class="footer__item">
-                    <span class="footer__title">ÚLTIMOS PROYECTOS</span>
-                    <div class="footer__projects">
-                        <a href="#" class="footer__project">
-                            <img loading="lazy" class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web" />
-                            <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
-                            <span class="footer__project-date">17 MAR 2022</span>
-                        </a>
-                        <a href="#" class="footer__project">
-                            <img loading="lazy" class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web" />
-                            <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
-                            <span class="footer__project-date">17 MAR 2022</span>
-                        </a>
-                        <a href="#" class="footer__project">
-                            <img loading="lazy" class="footer_project-image" src="assets/projects/portfolio.jpg" alt="Portafolio web" />
-                            <span class="footer__project-title">Portafolio web para estudiante de derecho</span>
-                            <span class="footer__project-date">17 MAR 2022</span>
-                        </a>
-                    </div>
-                </section>
-                <section class="footer__item">
-                    <span class="footer__title">ESPECIALIDADES</span>
-                    <div class="footer__especialties">
-                        <div class="footer__especialty">
-                            <span class="footer__especialty-title">Diseño UX / UI</span>
-                            <progress max="100" value="60" class="footer__especialty-progress">60%</progress>
-                        </div>
-                        <div class="footer__especialty">
-                            <span class="footer__especialty-title">Diseño Web</span>
-                            <progress max="100" value="80" class="footer__especialty-progress">70%</progress>
-                        </div>
-                        <div class="footer__especialty">
-                            <span class="footer__especialty-title">Programación Web</span>
-                            <progress max="100" value="30" class="footer__especialty-progress">30%</progress>
-                        </div>
-                        <div class="footer__especialty">
-                            <span class="footer__especialty-title">Sistema de Gestión de Contenidos</span>
-                            <progress max="100" value="50" class="footer__especialty-progress">50%</progress>
-                        </div>
-                    </div>
-                </section>
-            </div>
+        <footer class="footer">
+            <a href="https://www.linkedin.com/in/miguel-j-medina/" target="_blank" class="btn btn--icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCzyTZE6ajnMNmhWwcWGmotw" target="_blank" class="btn btn--icon">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://codepen.io/pana9422" target="_blank" class="btn btn--icon">
+                <i class="fa-brands fa-codepen"></i>
+            </a>
+            <a href="https://github.com/pana9422" target="_blank" class="btn btn--icon">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
         </footer>
     </body>
 </html>
