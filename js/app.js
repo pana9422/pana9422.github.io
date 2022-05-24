@@ -22,3 +22,4 @@ const navActive = () => {
 
 window.addEventListener("scroll", () => navActive());
 window.addEventListener("load", () => navActive());
+window.addEventListener("resize", () => navActive());
